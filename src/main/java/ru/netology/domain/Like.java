@@ -4,26 +4,40 @@ public class Like {
     private int likeCount;
     private boolean isUserLiked;
     private boolean canLike;
+    private int canPublish;
 
-    public int getLikeCount(){
+    public int getLikeCount() {
         return likeCount;
     }
-    public boolean getIsUserLiked(){
-        return isUserLiked;
-    }
-    public boolean getCanLike(){
-        return canLike;
-    }
-    public void setLikeCount(int likeCount){
-        if (likeCount>0){
+
+    public void setLikeCount(int likeCount) {
+        if (likeCount > 0) {
             this.likeCount = likeCount;
         }
     }
-    public void setIsUserLiked(boolean isUserLiked){
+
+    public boolean getIsUserLiked() {
+        return isUserLiked;
+    }
+
+    public void setIsUserLiked(boolean isUserLiked) {
         this.isUserLiked = isUserLiked;
     }
-    public void setCanLike(boolean canLike){
+
+    public boolean getCanLike() {
+        return canLike;
+    }
+
+    public void setCanLike(boolean canLike) {
         this.canLike = canLike;
+    }
+
+    public int getCanPublish() {
+        return canPublish;
+    }
+
+    public void setCanPublish(int canPublish) {
+        this.canPublish = canPublish;
     }
 
 

@@ -6,28 +6,42 @@ public class Repost {
     private int userId;
     private Date repostDate;
     private int repostCount;
+    private int userReposted;
 
-    public int getUserId(){
+    public int getUserId() {
         return userId;
     }
-    public Date getRepostDate(){
-        return repostDate;
-    }
-    public int getRepostCount(){
-        return repostCount;
-    }
-    public void setUserId(int userId){
-        if (userId>0){
+
+    public void setUserId(int userId) {
+        if (userId > 0) {
             this.userId = userId;
         }
     }
-    public void setRepostDate(Date repostDate){
+
+    public Date getRepostDate() {
+        return repostDate;
+    }
+
+    public void setRepostDate(Date repostDate) {
         this.repostDate = repostDate;
     }
-    public void setRepostCount(int repostCount){
-        if (repostCount>0){
+
+    public int getRepostCount() {
+        return repostCount;
+    }
+
+    public void setRepostCount(int repostCount) {
+        if (repostCount > 0) {
             this.repostCount = repostCount;
         }
+    }
+
+    public int getUserReposted() {
+        return userReposted;
+    }
+
+    public void setUserReposted(int userReposted) {
+        this.userReposted = userReposted;
     }
 
 }
